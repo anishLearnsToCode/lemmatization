@@ -23,7 +23,7 @@ __Natural Language Processing - Dr. Seba Susan__
 ## Introduction
 
 ## Implementation
-The following Helper classes have been used to create the setemmed output, lemmatize and 
+The following Helper classes have been used to create the stemmed output, lemmatize and 
 Tokenize the output.
 
 - [PorterStemmer](src/PorterStemmer.py)
@@ -34,8 +34,9 @@ Tokenize the output.
 
 > _Lemmatizer_ uses the __nltk.WordNetLemmatizer__
 
-> _PorterStemmer_ has been implemented by @anishLearnsToCode. See project 
-> [here](https://github.com/anishLearnsToCode/porter-stemmer).
+> _PorterStemmer_ has been implemented by 
+> [@anishLearnsToCode](https://github.com/anishLearnsToCode). 
+> See project [here](https://github.com/anishLearnsToCode/porter-stemmer).
  
 Initially the resume is loaded as a string from the `assets/resume.txt` file. 2 outputs are 
 created from this resume. One stemmed, one lemmatized. Both these outputs are compared and 
