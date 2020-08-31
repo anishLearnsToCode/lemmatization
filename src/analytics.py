@@ -40,7 +40,6 @@ print('No. of unique tokens/words in the lemmatized output:', len(lemmatized_res
 print('\nTop 30 most common words/tokens in the stemmed output:\n', stemmed_resume_frequencies.most_common(30))
 print('Top 30 most common words/tokens in the lemmatized output:\n', lemmatized_resume_frequencies.most_common(30))
 
-
 # Analyzing of frequency of POS tags in original, stemmed and Lemmatized resume
 resume_pos_frequency = get_pos_frequency(resume_tokens)
 stemmed_resume_pos_frequency = get_pos_frequency(stemmed_resume_tokens)
@@ -49,3 +48,14 @@ lemmatized_resume_pos_frequency = get_pos_frequency(lemmatized_resume_tokens)
 print('\nResume POS Tags Frequency:', resume_pos_frequency)
 print('Stemmed Resume POS Tags Frequency:', stemmed_resume_pos_frequency)
 print('Lemmatized Resume POS Tags Frequency:', lemmatized_resume_pos_frequency)
+
+# compiling pos tags for words that have been stemmed and lemmatized differently
+diff = []
+for stemmed, lemmatized in zip(stemmed_resume_tokens, lemmatized_resume_tokens):
+    if not stemmed == lemmatized:
+        stemmed_synsets = wordnet.synsets(stemmed)
+        lemmatized_synsets = wordnet.synsets(lemmatized)
+        stemmed_synset = stemmed_synsets[0].pos() if isinstance(stemmed_synsets, list) and len(stemmed_synsets) > 0 else ''
+        lemmatized_synset = lemmatized_synsets[0].pos() if isinstance(lemmatized_synsets, list) and len(lemmatized_synsets) > 0 else ''
+        diff.append({stemmed: stemmed_synset, lemmatized: lemmatized_synset})
+print('\n', diff)

@@ -14,7 +14,7 @@ Creating content to teach Core Java and Python with Data Structures and Algorith
 
 Summer Research Fellow at University of Auckland ( 2 Months )
 Auckland, New Zealand
-Worked on Geometry of Mobius Transformations, Differential Grometry under Dr. Pedram Hekmati at the Department of
+Worked on Geometry of Mobius Transformations, Differential Geometry under Dr. Pedram Hekmati at the Department of
 Mathematics, University of Auckland
 
 Software Developer at CERN ( 14 Months )
