@@ -4,7 +4,7 @@ __Anish Sachdeva (DTU/2K16/MC/013)__
 
 __Natural Language Processing - Dr. Seba Susan__
 
-[📓 Jupyter Notebook]() |
+[📓 Jupyter Notebook](notebook/lemmatization.ipynb) |
 [📄 Input](assets/resume.txt) |
 [📄 Stemmed Output](assets/resume_stemmed.txt) |
 [📄 Lemmatized Output](assets/resume_lemmatized.txt) | 

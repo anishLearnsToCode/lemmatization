@@ -6,16 +6,11 @@ from nltk.tokenize import word_tokenize
 
 # nltk.download('wordnet')
 
-resume_file = open('../assets/resume.txt', 'r')
-resume = resume_file.read().lower()
-resume_file.close()
-
-
 # lemmatizer = WordNetLemmatizer()
 # print(lemmatizer.lemmatize('rocks'))
 
 # running = wordnet.synsets('running', pos=wordnet.VERB)
-# print(type(running))
+# print(type(running))ste
 # print('running:', running)
 #
 # first: nltk.corpus.reader.wordnet.Synset = running[1]
