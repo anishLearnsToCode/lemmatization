@@ -4,6 +4,12 @@ __Anish Sachdeva (DTU/2K16/MC/013)__
 
 __Natural Language Processing - Dr. Seba Susan__
 
+[[📓 Jupyter Notebook]]()
+[[📄 Input]](assets/resume.txt)
+[[📄 Stemmed Output]](assets/resume_stemmed.txt)
+[[📄 Lemmatized Output]](assets/resume_lemmatized.txt)
+[[📐 Project]]()
+
 ![lemmatization](assets/lemmatization.png) 
 
 ## Overview
@@ -72,3 +78,4 @@ python analytics.py
 1. [Porter Stemmer Algorithm](http://tartarus.org/martin/PorterStemmer)
 1. [Porter Stemmer Implementation ~anishLearnsToCode](https://github.com/anishLearnsToCode/porter-stemmer)
 1. [NLTK WordNetInterface](https://www.nltk.org/howto/wordnet.html)
+1. [NLTK Stem Submodule](http://www.nltk.org/api/nltk.stem.html)

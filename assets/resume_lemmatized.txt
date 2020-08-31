@@ -1,0 +1,67 @@
+anish sachdeva
+software developer clean code enthusiast
+
+phone 8287428181
+email anish_ outlook com
+home sandesh vihar pitampura new delhi 110034
+date of birth 7th april 1998
+language english hindi french
+
+work experience
+what after college 4 month
+delhi india
+creating content to teach core java and python with data structure and algorithm and giving online class to student
+
+summer research fellow at university of auckland 2 month
+auckland new zealand
+worked on geometry of mobius transformation differential grometry under dr pedram hekmati at the department of
+mathematics university of auckland
+
+software developer at cern 14 month
+cern geneva switzerland
+worked in the core platform team of the fap bc group part of an agile team of developer that maintains and add core
+functionality to application used internally at cern by hr financial administrative and other department
+including scientific
+
+worked on legacy application that comprise of single and some time multiple framework such a java spring boot
+hibernate and java ee also worked with google polymer 1 0 and jsp on the client side
+
+maintained cern s electronic document handing system application with 1m loc that comprising of multiple framework
+and created 20 year ago worked on feature request support request and incident and also release cycle
+
+teaching assistant 4 month
+coding ninja delhi
+served a the teaching assistant to nucleus java with d batch under mr ankur kumar worked on creating course
+content and quiz for online platform of coding ninja for java helped student in core data structure and
+algorithm concept in java
+
+education
+delhi technological university 2016 2021
+bachelor of technology mathematics and computing
+cgpa 9 2
+
+the heritage school rohini 2004 2016
+physic chemistry math computer science with english
+senior secondary 94 8
+secondary 9 8 cgpa
+
+technical skill
+java algorithm and data structure
+mean stack web development
+python machine learning
+matlab octave
+mysql postgressql mongodb
+
+other skill
+m office adobe photoshop latex mitex
+
+university course
+applied mathematics i ii iii
+linear algebra probability statistic stochastic process discrete math
+computer organization architecture data structure algorithm design and analysis dbms o
+computer vision nlp
+
+important link
+http www linkedin com in anishsachdeva1998
+http github com anishlearnstocode
+http www hackerrank com anishviewer
