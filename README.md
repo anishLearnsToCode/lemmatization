@@ -25,20 +25,20 @@ cd src
 ```
 
 Load in the Resume and create a stemmed and lemmatized output 
-```powershell
+```shell script
 python stem_resume.py
 python lemmatize_resume.py
 ```
 
 See the outputs of the original, stemmed and lemmatized resumes: 
-```powershell
+```bash
 python output_resume.py
 python output_setmmed.py
 python output_lemmatized.py
 ```
 
 Run the Analytics on the Stemmed and Lemmatized outputs
-```powershell
+```batch
 python analytics.py
 ```
 
