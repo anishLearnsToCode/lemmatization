@@ -7,10 +7,33 @@ __Natural Language Processing - Dr. Seba Susan__
 ![lemmatization](assets/lemmatization.png) 
 
 ## Overview
+1. [Introduction](#introduction)
+1. [Implementation](#implementation)
+1. [Results](#results)
+1. [Analytics & Discussion](#analytics--discussion)
+1. [Running the Project Locally](#running-project-locally)
+1. [Bibliography](#bibliography)
 
 ## Introduction
 
 ## Implementation
+The following Helper classes have been used to create the setemmed output, lemmatize and 
+Tokenize the output.
+
+- [PorterStemmer](src/PorterStemmer.py)
+- [Lemmatizer](src/Lemmatizer.py)
+- [Tokenizer](src/Tokenizer.py)
+
+> _Tokenizer_ uses the __nltk.RegexpTokenizer__
+
+> _Lemmatizer_ uses the __nltk.WordNetLemmatizer__
+
+> _PorterStemmer_ has been implemented by @anishLearnsToCode. See project 
+> [here](https://github.com/anishLearnsToCode/porter-stemmer).
+ 
+Initially the resume is loaded as a string from the `assets/resume.txt` file. 2 outputs are 
+created from this resume. One stemmed, one lemmatized. Both these outputs are compared and 
+basic analysis is run on them in the `src/analytics.py` file.
 
 ## Results
 
@@ -18,14 +41,14 @@ __Natural Language Processing - Dr. Seba Susan__
 
 ## Running Project Locally
 Clone the repository on your machine and enter the project directory
-```powershell
+```bash
 git clone https://github.com/anishLearnsToCode/lemmatization.git
 cd lemmatization
 cd src
 ```
 
 Load in the Resume and create a stemmed and lemmatized output 
-```shell script
+```bash
 python stem_resume.py
 python lemmatize_resume.py
 ```
@@ -38,8 +61,14 @@ python output_lemmatized.py
 ```
 
 Run the Analytics on the Stemmed and Lemmatized outputs
-```batch
+```bash
 python analytics.py
 ```
 
 ## Bibliography
+1. [Speech & Language Processing ~Jurafsky](https://web.stanford.edu/~jurafsky/slp3/)
+1. [nltk](https://www.nltk.org/)
+1. [pickle](https://docs.python.org/3/library/pickle.html)
+1. [Porter Stemmer Algorithm](http://tartarus.org/martin/PorterStemmer)
+1. [Porter Stemmer Implementation ~anishLearnsToCode](https://github.com/anishLearnsToCode/porter-stemmer)
+1. [NLTK WordNetInterface](https://www.nltk.org/howto/wordnet.html)
