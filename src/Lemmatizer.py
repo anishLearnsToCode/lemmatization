@@ -6,8 +6,8 @@ from nltk.tokenize import word_tokenize
 
 # nltk.download('wordnet')
 
-# lemmatizer = WordNetLemmatizer()
-# print(lemmatizer.lemmatize('rocks'))
+lemmatizer = WordNetLemmatizer()
+print(lemmatizer.lemmatize('better', pos='a'))
 
 # running = wordnet.synsets('running', pos=wordnet.VERB)
 # print(type(running))ste
