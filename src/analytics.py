@@ -1,8 +1,10 @@
 import pickle
+import nltk
+import pprint
 from collections import Counter
 from nltk.tokenize import word_tokenize
 from nltk.corpus import wordnet
-# nltk.download('wordnet')
+nltk.download('wordnet')
 
 
 def get_pos_frequency(tokens: list) -> Counter:
@@ -50,7 +52,9 @@ print('Stemmed Resume POS Tags Frequency:', stemmed_resume_pos_frequency)
 print('Lemmatized Resume POS Tags Frequency:', lemmatized_resume_pos_frequency)
 
 # compiling pos tags for words that have been stemmed and lemmatized differently
+printer = pprint.PrettyPrinter(width=50)
 diff = []
+
 for stemmed, lemmatized in zip(stemmed_resume_tokens, lemmatized_resume_tokens):
     if not stemmed == lemmatized:
         stemmed_synsets = wordnet.synsets(stemmed)
@@ -58,4 +62,5 @@ for stemmed, lemmatized in zip(stemmed_resume_tokens, lemmatized_resume_tokens):
         stemmed_synset = stemmed_synsets[0].pos() if isinstance(stemmed_synsets, list) and len(stemmed_synsets) > 0 else ''
         lemmatized_synset = lemmatized_synsets[0].pos() if isinstance(lemmatized_synsets, list) and len(lemmatized_synsets) > 0 else ''
         diff.append({stemmed: stemmed_synset, lemmatized: lemmatized_synset})
-print('\n', diff)
+print('POS Tags for Words with different stemmed and Lemmatized forms:')
+printer.pprint(diff)

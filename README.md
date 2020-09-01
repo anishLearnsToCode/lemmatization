@@ -8,7 +8,7 @@ __Natural Language Processing - Dr. Seba Susan__
 [📄 Input](assets/resume.txt) |
 [📄 Stemmed Output](assets/resume_stemmed.txt) |
 [📄 Lemmatized Output](assets/resume_lemmatized.txt) | 
-[📐 Project]()
+[📐 Project Report](assets/nlp-assignment-4-lemmatization.pdf)
 
 ![lemmatization](assets/lemmatization.png) 
 
@@ -21,9 +21,9 @@ __Natural Language Processing - Dr. Seba Susan__
 1. [Bibliography](#bibliography)
 
 ## Introduction
-For grammatical reasons, documents are going to use different forms of a word, such as organize, organizes, and 
-organizing. Additionally, there are families of derivationally related words with similar meanings, such as democracy, 
-democratic, and democratization. In many situations, it seems as if it would be useful for a search for one of 
+For grammatical reasons, documents are going to use different forms of a word, such as _organize_, _organizes_, and 
+_organizing_. Additionally, there are families of derivationally related words with similar meanings, such as _democracy_, 
+_democratic_, and _democratization_. In many situations, it seems as if it would be useful for a search for one of 
 these words to return documents that contain another word in the set.
 
 The goal of both stemming and lemmatization is to reduce inflectional forms and sometimes derivationally related 
@@ -38,7 +38,7 @@ running --> run
 The lemmatizer on the other hand doesn't follow a heuristic approach in reducing the word and will instead 
 use a lookup table to refer to the various forms and meanings the word can possess and will also look up the 
 surrounding context of the word to determine the correct POS (Part of Speech) Tag, which is then used to find the
-__lexeme__ of the word. The lexeme is a valid english word and doesn't necessarily have to have a similar chracter
+__lexeme__ of the word. The lexeme is a valid english word and doesn't necessarily have to have a similar character
 (root) structure e.g.
 
 ```txt
@@ -46,7 +46,7 @@ better --> good
 wolves --> wolf
 ```  
 
-We implement the lemmitizer using the Python __nltl__ package and apply it on a resume and compare the output with a
+We implement the lemmitizer using the Python __nltk__ package and apply it on a resume and compare the output with a
 stemmed form of the same resume. Further Analytics and discussion give a deep dive into advantages, disadvantages and 
 uses cases of lemmitization.
 
@@ -100,7 +100,7 @@ thing an employer might want to do is search the corpora with specific skills su
 machine learning etc. and then receive resumes with a match for this string.
 
 Hence, in our application which is centered more around Information Extraction/Information Retrieval than context 
-understanding Stemming makes more sense. This may seem counter intuitive as we have seen in the analytics above that 
+understanding Stemming makes more sense. This may seem counterintuitive as we have seen in the analytics above that 
 lemmatization preserves the POS tags and context structure, but preserving POS tags and context structure will not 
 improve an IR system.
 

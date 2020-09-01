@@ -1,21 +1,5 @@
-from nltk.stem import WordNetLemmatizer
-from nltk.corpus import wordnet
 import nltk
-import pickle
-from nltk.tokenize import word_tokenize
-
-# nltk.download('wordnet')
-
-lemmatizer = WordNetLemmatizer()
-print(lemmatizer.lemmatize('better', pos='a'))
-
-# running = wordnet.synsets('running', pos=wordnet.VERB)
-# print(type(running))ste
-# print('running:', running)
-#
-# first: nltk.corpus.reader.wordnet.Synset = running[1]
-# print(type(first))
-# print(first.definition())
+from nltk.stem import WordNetLemmatizer
 
 
 class Lemmatizer:
