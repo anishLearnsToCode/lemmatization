@@ -76,6 +76,33 @@ basic analysis is run on them in the `src/analytics.py` file.
 ⭐ [Lemmatized Resume](assets/resume_lemmatized.txt)
 
 ## Analytics & Discussion
+Stemming reduces words having the same chacater roots (may not have same meanings) to the same roots and this is 
+then helpful in IR (Information Retrieval) Applications as the person/user can search for small strings like uni or 
+univer and these strings will automatically match to university , universities etc.
+
+So, stemming makes a lot of sense in Information Retrieval Applications. In advanced information retrieval 
+applications where the user can not only enter a stemmed form of what she is searching, but can also enter the 
+context of what she wishes to search such as better food than x (where x is a restaurant). Our IR application should 
+be abe to understand that better here refers to good food or better ratings than the ratings for a restaurant.
+
+Or we may have a chatbot application which communicates with the user and the chatbot application needs to 
+understand the intent of the user so that the chatbot can answer queries that the user puts forth. For answering 
+queries or understanding speech and translating to text, or calculating the probability of given word we require a 
+model that can understand context and not just the root of a word.
+
+In such applications we use lemmatization along with POS (Part of Speech) tagging. Even in machine translations 
+wherein we need to compute the probabilities of the translated text, we need a lemmatizer along with a POS tagger 
+to compute structure and probabilities.
+
+Hence, both the stemmer and the lemmatizer cater to very different needs. In our application we decide whether to use 
+a stemmer or lemmatizer based on what our application must do. In a system with multiple resumes, the most common 
+thing an employer might want to do is search the corpora with specific skills such as management , java , 
+machine learning etc. and then receive resumes with a match for this string.
+
+Hence, in our application which is centered more around Information Extraction/Information Retrieval than context 
+understanding Stemming makes more sense. This may seem counter intuitive as we have seen in the analytics above that 
+lemmatization preserves the POS tags and context structure, but preserving POS tags and context structure will not 
+improve an IR system.
 
 ## Running Project Locally
 Clone the repository on your machine and enter the project directory
